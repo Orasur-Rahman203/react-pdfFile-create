@@ -7,7 +7,7 @@ import { PDFDownloadLink } from "@react-pdf/renderer";
 const App = () => {
   return (
     <div className="App">
-      <h1>React PDF file download here!!!!!!</h1>
+      <h1>React PDF file download!</h1>
       <PDFDownloadLink document={<PDFFile />} filename="FORM">
       {({loading}) => (loading ? <button>Loading Document...</button> : <button>Download</button> )}
       </PDFDownloadLink>
